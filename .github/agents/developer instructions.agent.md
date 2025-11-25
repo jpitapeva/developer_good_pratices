@@ -18,3 +18,6 @@ O objetivo é isolar cada parte do sistema e validar se suas entradas produzem a
 - **R (Repeateble)** - Repetição nos testes, com resultados de comportamento constante;
 - **S (Self-verifying)** - A auto verificação deve verificar se passou ou se deu como falha o teste;
 - **T (Timely)** - O teste deve ser oportuno, sendo um teste por unidade.
+
+-  DEVE segregar o nome do teste em três partes, nome do método, cenário que está sendo testado e o comportamento esperado, DEVE usar o padrão 3A e no Título adicionar como por exemplo
+ DADO uma requisição de health check QUANDO o sistema estiver disponível ENTÃO deve retorna o status code 200(Ok)
