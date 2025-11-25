@@ -19,5 +19,21 @@ O objetivo é isolar cada parte do sistema e validar se suas entradas produzem a
 - **S (Self-verifying)** - A auto verificação deve verificar se passou ou se deu como falha o teste;
 - **T (Timely)** - O teste deve ser oportuno, sendo um teste por unidade.
 
--  DEVE segregar o nome do teste em três partes, nome do método, cenário que está sendo testado e o comportamento esperado, DEVE usar o padrão 3A e no Título adicionar como por exemplo
- DADO uma requisição de health check QUANDO o sistema estiver disponível ENTÃO deve retorna o status code 200(Ok)
+# Boas Práticas
+## BDD
+Seja qual for o tipo de teste, DEVE seguir os principios do BDD, fazendo o uso dos passos: DADO/QUANDO/ENTAO; 
+```
+Exemplo:
+   DADO uma requisição de health check
+   QUANDO o sistema estiver disponível
+   ENTAO  deve retorna o status code 200(Ok)
+```
+
+## Nome do teste 
+O nome do teste DEVE estar segregado em três partes, nome do método, cenário que está sendo testado e o comportamento esperado
+Exemplo:
+`ChamadaEndpointInfra_SistemaDisponivel_Retornar200Ok`
+
+## 3A
+O teste DEVE usar o padrão 3A
+ 
